@@ -27,10 +27,16 @@ function getComputerChoice() {
 function getHumanChoice() {
   let humanChoice;
   let userInput = prompt("Choose between rock, paper, or scissors");
-  if (userInput === "Rock" || userInput === "Paper" || userInput === "Scissors") {
+  if (userInput === null || userInput === undefined) {
+    inputIsInvalid = true;
+    return;
+  }
+  let modUserInput = userInput.toLowerCase();
+  if (modUserInput === "rock" || modUserInput === "paper" || modUserInput === "scissors") {
     humanChoice = userInput;
   } else {
-    alert("You can only enter either rock, paper, or scissors.");
+    inputIsInvalid = true;
+    return;
   }
   return humanChoice;
 }
@@ -68,7 +74,14 @@ function playRound(humanChoice, computerChoice) {
   }
 }
 
+let inputIsInvalid = false;
+
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
-playRound(humanSelection, computerSelection);
+if (inputIsInvalid) {
+  console.log("You entered an invalid input.");
+  console.log("Please choose between Rock, Paper, or Scissors.")
+} else {
+  playRound(humanSelection, computerSelection);
+}
