@@ -1,3 +1,6 @@
+let humanScore = 0;
+let computerScore = 0;
+
 function getRandomIntInclusive(min, max) {
   const minCeiled = Math.ceil(min);
   const maxFloored = Math.floor(max);
