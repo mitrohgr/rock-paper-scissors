@@ -12,13 +12,13 @@ function getComputerChoice() {
   const value = getRandomIntInclusive(0, 2);
   switch (value) {
     case 0:
-      computerChoice = "rock";
+      computerChoice = "Rock";
       break;
     case 1:
-      computerChoice = "paper";
+      computerChoice = "Paper";
       break;
     case 2:
-      computerChoice = "scissors";
+      computerChoice = "Scissors";
       break;
   }
   return computerChoice;
@@ -27,7 +27,7 @@ function getComputerChoice() {
 function getHumanChoice() {
   let humanChoice;
   let userInput = prompt("Choose between rock, paper, or scissors");
-  if (userInput === "rock" || userInput === "paper" || userInput === "scissors") {
+  if (userInput === "Rock" || userInput === "Paper" || userInput === "Scissors") {
     humanChoice = userInput;
   } else {
     alert("You can only enter either rock, paper, or scissors.");
@@ -38,30 +38,30 @@ function getHumanChoice() {
 function playRound(humanChoice, computerChoice) {
   let newHumanChoice = humanChoice.toLowerCase();
   let newComputerChoice = computerChoice.toLowerCase();
-  console.log(`You chose ${newHumanChoice}, Computer chose ${newComputerChoice}.`);
+  console.log(`You chose ${humanChoice}, Computer chose ${computerChoice}.`);
   if (newHumanChoice === newComputerChoice) {
     console.log("It's a draw!");
   } else if (newHumanChoice === "rock") {
-    if (computerChoice === "paper") {
+    if (newComputerChoice === "paper") {
       console.log(`You lose! ${computerChoice} beats ${humanChoice}.`);
       computerScore++;
-    } else if (computerChoice === "scissors") {
+    } else if (newComputerChoice === "scissors") {
       console.log(`You win! ${humanChoice} beats ${computerChoice}.`);
       humanScore++;
     }
   } else if (newHumanChoice === "paper") {
-    if (computerChoice === "scissors") {
+    if (newComputerChoice === "scissors") {
       console.log(`You lose! ${computerChoice} beats ${humanChoice}.`);
       computerScore++;
-    } else if (computerChoice === "rock") {
+    } else if (newComputerChoice === "rock") {
       console.log(`You win! ${humanChoice} beats ${computerChoice}.`);
       humanScore++;
     }
   } else if (newHumanChoice === "scissors") {
-    if (computerChoice === "rock") {
+    if (newComputerChoice === "rock") {
       console.log(`You lose! ${computerChoice} beats ${humanChoice}.`);
       computerScore++;
-    } else if (computerChoice === "paper") {
+    } else if (newComputerChoice === "paper") {
       console.log(`You win! ${humanChoice} beats ${computerChoice}.`);
       humanScore++;
     }
