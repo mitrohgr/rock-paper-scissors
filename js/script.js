@@ -22,3 +22,16 @@ function getComputerChoice() {
 }
 
 console.log(getComputerChoice());
+
+function getHumanChoice() {
+  let humanChoice;
+  let userInput = prompt("Choose between rock, paper, or scissors");
+  if (userInput === "rock" || userInput === "paper" || userInput === "scissors") {
+    humanChoice = userInput;
+  } else {
+    alert("You can only enter either rock, paper, or scissors.");
+  }
+  return humanChoice;
+}
+
+console.log(getHumanChoice());
