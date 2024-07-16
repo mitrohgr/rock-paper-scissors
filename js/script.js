@@ -24,8 +24,6 @@ function getComputerChoice() {
   return computerChoice;
 }
 
-console.log(getComputerChoice());
-
 function getHumanChoice() {
   let humanChoice;
   let userInput = prompt("Choose between rock, paper, or scissors");
@@ -37,4 +35,40 @@ function getHumanChoice() {
   return humanChoice;
 }
 
-console.log(getHumanChoice());
+function playRound(humanChoice, computerChoice) {
+  let newHumanChoice = humanChoice.toLowerCase();
+  let newComputerChoice = computerChoice.toLowerCase();
+  console.log(`You chose ${newHumanChoice}, Computer chose ${newComputerChoice}.`);
+  if (newHumanChoice === newComputerChoice) {
+    console.log("It's a draw!");
+  } else if (newHumanChoice === "rock") {
+    if (computerChoice === "paper") {
+      console.log(`You lose! ${computerChoice} beats ${humanChoice}.`);
+      computerScore++;
+    } else if (computerChoice === "scissors") {
+      console.log(`You win! ${humanChoice} beats ${computerChoice}.`);
+      humanScore++;
+    }
+  } else if (newHumanChoice === "paper") {
+    if (computerChoice === "scissors") {
+      console.log(`You lose! ${computerChoice} beats ${humanChoice}.`);
+      computerScore++;
+    } else if (computerChoice === "rock") {
+      console.log(`You win! ${humanChoice} beats ${computerChoice}.`);
+      humanScore++;
+    }
+  } else if (newHumanChoice === "scissors") {
+    if (computerChoice === "rock") {
+      console.log(`You lose! ${computerChoice} beats ${humanChoice}.`);
+      computerScore++;
+    } else if (computerChoice === "paper") {
+      console.log(`You win! ${humanChoice} beats ${computerChoice}.`);
+      humanScore++;
+    }
+  }
+}
+
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+
+playRound(humanSelection, computerSelection);
