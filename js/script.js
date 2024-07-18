@@ -99,3 +99,16 @@ function declareWinner() {
   }
   container.appendChild(winner);
 }
+
+const reset = document.querySelector(".reset");
+
+reset.addEventListener("click", () => {
+  isGameOver = false;
+  
+  humanScore = 0;
+  computerScore = 0;
+
+  result.textContent = "";
+  score.textContent = "";
+  winner.textContent = "";
+});
