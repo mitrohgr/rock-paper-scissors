@@ -87,15 +87,13 @@ function playGame() {
     }
   }
 
-  for (let i = 1; i <= 5; i++) {
-    const humanSelection = getHumanChoice();
-    if (!isInputValid(humanSelection)) {
-      console.error("You entered an invalid input.");
-      continue;
-    }
-    const computerSelection = getComputerChoice();
-    playRound(humanSelection, computerSelection);
+  const humanSelection = getHumanChoice();
+  if (!isInputValid(humanSelection)) {
+    console.error("You entered an invalid input.");
+    return;
   }
+  const computerSelection = getComputerChoice();
+  playRound(humanSelection, computerSelection);
 
   declareWinner();
 }
