@@ -21,22 +21,21 @@ function getComputerChoice() {
   return computerChoice;
 }
 
-function getHumanChoice() {
-  let humanChoice = prompt("Choose between Rock, Paper, or Scissors");
-  return humanChoice;
-}
+// function getHumanChoice() {
+//   let humanChoice = prompt("Choose between Rock, Paper, or Scissors");
+//   return humanChoice;
+// }
 
-function isInputValid(humanInput) {
-  if (humanInput === undefined || humanInput === null) {
-    return false;
-  }
-  let temp = humanInput.toLowerCase();
-  if (!(temp === "rock" || temp === "paper" || temp === "scissors")) {
-    return false;
-  }
-  return true;
-}
-
+// function isInputValid(humanInput) {
+//   if (humanInput === undefined || humanInput === null) {
+//     return false;
+//   }
+//   let temp = humanInput.toLowerCase();
+//   if (!(temp === "rock" || temp === "paper" || temp === "scissors")) {
+//     return false;
+//   }
+//   return true;
+// }
 
 function playGame() {
   let humanScore = 0;
@@ -74,28 +73,38 @@ function playGame() {
     }
   }
 
-  function declareWinner() {
-    if (humanScore > computerScore) {
-      console.log(`Final score: You ${humanScore}, Computer ${computerScore}`);
-      console.log(`Congratulations! You are the winner!`);
-    } else if (humanScore < computerScore) {
-      console.log(`Final score: You ${humanScore}, Computer ${computerScore}`);
-      console.log(`Bad luck! Computer is the winner!`);
-    } else {
-      console.log(`Final score: You ${humanScore}, Computer ${computerScore}`);
-      console.log(`Stalemate! It's a draw!`);
-    }
-  }
+  // function declareWinner() {
+  //   if (humanScore > computerScore) {
+  //     console.log(`Final score: You ${humanScore}, Computer ${computerScore}`);
+  //     console.log(`Congratulations! You are the winner!`);
+  //   } else if (humanScore < computerScore) {
+  //     console.log(`Final score: You ${humanScore}, Computer ${computerScore}`);
+  //     console.log(`Bad luck! Computer is the winner!`);
+  //   } else {
+  //     console.log(`Final score: You ${humanScore}, Computer ${computerScore}`);
+  //     console.log(`Stalemate! It's a draw!`);
+  //   }
+  // }
 
-  const humanSelection = getHumanChoice();
-  if (!isInputValid(humanSelection)) {
-    console.error("You entered an invalid input.");
-    return;
-  }
-  const computerSelection = getComputerChoice();
-  playRound(humanSelection, computerSelection);
+  const buttons = document.querySelectorAll(".btn");
 
-  declareWinner();
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const humanSelection = button.textContent;
+      const computerSelection = getComputerChoice();
+      playRound(humanSelection, computerSelection);
+    });
+  });
+
+  // const humanSelection = getHumanChoice();
+  // if (!isInputValid(humanSelection)) {
+  //   console.error("You entered an invalid input.");
+  //   return;
+  // }
+  // const computerSelection = getComputerChoice();
+  // playRound(humanSelection, computerSelection);
+
+  // declareWinner();
 }
 
 playGame();
