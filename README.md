@@ -12,3 +12,13 @@ This is because the [Learning to Code](https://dev.to/theodinproject/learning-co
 **rock-paper-scissors** is the [third project](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors) from the [Foundations Course](https://www.theodinproject.com/paths/foundations/courses/foundations) in [The Odin Project](https://www.theodinproject.com/about).
 
 Here, I first create a game of "Rock Paper Scissors" which was originally played entirely in the console, then, later on, I update it to a full fledged browser based version with a graphical user interface.
+
+## Technologies
+
++ ***CLI***
++ ***Git***
++ ***GitHub***
++ ***HTML***
++ ***GitHub Pages***
++ ***CSS***
++ ***JavaScript***
