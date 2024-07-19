@@ -6,3 +6,82 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+body {
+  width: 700px;
+  margin: 0 auto;
+  background-color: #c4b1ce28;
+}
+
+.btn, .reset {
+  border: none;
+  color: white;
+  margin: 48px 0;
+  cursor: pointer;
+  font-size: 38px;
+  font-weight: 900;
+  border-radius: 50%;
+  box-shadow: 1px 3px 5px #1b1b1af9;
+  font-family: "Lucida Handwriting", "Brush Script MT", cursive;
+}
+
+.btn.rock {
+  width: 137px;
+  height: 137px;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 16px 40px;
+  background-color: rgba(165, 42, 42, 0.578);
+}
+
+.btn.paper {
+  width: 137px;
+  height: 137px;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 16px 36px;
+  background-color: rgba(0, 0, 255, 0.572);
+}
+
+.btn.scissors {
+  width: 137px;
+  height: 137px;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 16px 18px;
+  background-color: rgba(0, 128, 0, 0.565);
+}
+
+.reset {
+  width: 100px;
+  height: 100px;
+  margin-left: 16px;
+  padding: 16px 8px;
+  background-color: rgba(255, 0, 0, 0.588);
+}
+
+.btn:hover,
+.reset:hover {
+  transform: translateY(-0.15rem);
+}
+
+.btn:active,
+.reset:active {
+  transform: translateY(0);
+}
+
+.btn.rock:hover {
+  background-color: rgb(165, 42, 42);
+}
+
+.btn.paper:hover {
+  background-color: rgb(0, 0, 255);
+}
+
+.btn.scissors:hover {
+  background-color: rgb(0, 128, 0);
+}
+
+.reset:hover {
+  background-color: rgb(255, 0, 0);
+}
