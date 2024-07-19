@@ -16,7 +16,7 @@ body {
 .btn, .reset {
   border: none;
   color: white;
-  margin: 48px 0;
+  margin: 38px 0;
   cursor: pointer;
   font-size: 38px;
   font-weight: 900;
@@ -84,4 +84,26 @@ body {
 
 .reset:hover {
   background-color: rgb(255, 0, 0);
+}
+
+.container .score,
+.container .result,
+.container .winner {
+  margin: 24px;
+  text-align: center;
+  font-weight: bolder;
+  font-family: cursive;
+}
+
+.container .score {
+  font-size: 44px;
+}
+
+.container .result {
+  font-size: 34px;
+}
+
+.container .winner {
+  font-size: 50px;
+  text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.594), 0 0 1em rgb(215, 215, 225), 0 0 0.2em rgb(184, 184, 255);
 }
