@@ -63,8 +63,13 @@ const container = document.querySelector(".container");
 const buttons = document.querySelectorAll(".btn");
 
 const score = document.createElement("div");
+score.setAttribute("class", "score");
+
 const result = document.createElement("div");
+result.setAttribute("class", "result");
+
 const winner = document.createElement("div");
+winner.setAttribute("class", "winner");
 
 buttons.forEach((button) => {
   button.addEventListener("click", function (e) {
