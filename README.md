@@ -29,3 +29,12 @@ Here, I first create a game of "Rock Paper Scissors" which was originally played
 
 > [!NOTE]
 > I was hesitating every single time to use the developer tools initially. There was nothing really that difficult in this particular project but whenever I was stuck with error messages, I noticed that the developer tools provided the best help. Using the debugger, using breakpoints, and specifically watching the value of a few variables helped me right away. This is probably the most important part of doing this project. Whether there is a disparity in the margin/padding or there is some issue with wrong output in JavaScript, the developer tools and debugging will be the greatest help.
+
+## Acknowledgements
+
++ *Credit* for the ***text*** goes to [wikiHow](https://www.wikihow.com/Play-Rock,-Paper,-Scissors)
+
+## Contact and Support
+
++ Feel free to contact ***mitrohgr_03505*** for project-related queries.
++ No further feature modifications or improvements will be done to this project.
