@@ -22,6 +22,14 @@ h1 {
   text-shadow: 1px 1px 2px rgb(255, 0, 0), 0 0 1em rgb(215, 215, 225), 0 0 0.2em rgb(184, 184, 255);
 }
 
+.container p {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bolder;
+  font-family: "Lucida Handwriting", cursive;
+  text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.235), 0 0 1em rgba(0, 0, 255, 0.229), 0 0 0.2em rgba(0, 0, 255, 0.157);
+}
+
 .btn, .reset {
   border: none;
   color: white;
