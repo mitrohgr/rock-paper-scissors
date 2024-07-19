@@ -13,6 +13,15 @@ body {
   background-color: #c4b1ce28;
 }
 
+h1 {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bolder;
+  color: rgb(134, 53, 92);
+  font-family: "Lucida Handwriting", cursive;
+  text-shadow: 1px 1px 2px rgb(255, 0, 0), 0 0 1em rgb(215, 215, 225), 0 0 0.2em rgb(184, 184, 255);
+}
+
 .btn, .reset {
   border: none;
   color: white;
