@@ -22,3 +22,10 @@ Here, I first create a game of "Rock Paper Scissors" which was originally played
 + ***GitHub Pages***
 + ***CSS***
 + ***JavaScript***
+
+## Self-reflections
+
+> This is the best project I've worked so far. I've learnt quite a lot of things: stuff like variables and operators, data types and conditionals, javascript developer tools, function basics, and array and loops. Some of the more important things were: how to solve problems (the three-tiered approach), understanding errors, writing clean code (and several principles), manipulating the DOM and handling events, and also installing Node.js.
+
+> [!NOTE]
+> I was hesitating every single time to use the developer tools initially. There was nothing really that difficult in this particular project but whenever I was stuck with error messages, I noticed that the developer tools provided the best help. Using the debugger, using breakpoints, and specifically watching the value of a few variables helped me right away. This is probably the most important part of doing this project. Whether there is a disparity in the margin/padding or there is some issue with wrong output in JavaScript, the developer tools and debugging will be the greatest help.
