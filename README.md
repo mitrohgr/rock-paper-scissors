@@ -46,5 +46,5 @@ Here, I first create a game of "Rock Paper Scissors" which was originally played
 
 ## Contact and Support
 
-+ Feel free to contact ***mitrohgr_03505*** for project-related queries.
++ Feel free to contact ***mitrohgr_03505*** on discord for project-related queries.
 + No further feature modifications or improvements will be done to this project.
