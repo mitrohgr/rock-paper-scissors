@@ -42,7 +42,7 @@ Here, I first create a game of "Rock Paper Scissors" which was originally played
 
 ## Acknowledgements
 
-+ *Credit* for the ***text*** goes to [wikiHow](https://www.wikihow.com/Play-Rock,-Paper,-Scissors)
++ *Credit* for the ***text*** goes to [wikiHow](https://www.wikihow.com/Play-Rock,-Paper,-Scissors).
 
 ## Contact and Support
 
