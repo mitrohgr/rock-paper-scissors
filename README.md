@@ -43,6 +43,7 @@ Here, I first create a game of "Rock Paper Scissors" which was originally played
 ## Acknowledgements
 
 + *Credit* for the ***text*** goes to [wikiHow](https://www.wikihow.com/Play-Rock,-Paper,-Scissors).
++ *Credit* for the ***README*** goes to [ritaly's README sheet](https://github.com/ritaly/README-cheatsheet).
 
 ## Contact and Support
 
